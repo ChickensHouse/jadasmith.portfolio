@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jada Smith | Portfolio</title>
+<meta name="description" content="Portfolio of Jada Smith, Computer Information Technology student and aspiring database developer.">
+<style>
+  :root{
+    --accent:#7a2e8f; --accent-soft:#f3e8f7; --bg:#ffffff; --bg-alt:#faf7fb; --text:#1f1b24; --muted:#5d5566;
+    --border:#e4dbe9; --card:#ffffff; --todo:#b45309; --todo-bg:#fff7ed;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --accent:#c58bd8; --accent-soft:#2a1d31; --bg:#141017; --bg-alt:#1a141e; --text:#efe9f2; --muted:#b4aaba;
+      --border:#33273a; --card:#1d1622; --todo:#fbbf6a; --todo-bg:#2b2113; }
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.65;color:var(--text);background:var(--bg)}
+  a{color:var(--accent)}
+  .wrap{max-width:960px;margin:0 auto;padding:0 20px}
+  header.nav{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:2px solid var(--accent)}
+  header.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:12px;padding-bottom:12px;flex-wrap:wrap}
+  .brand{font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);text-decoration:none}
+  nav a{margin-left:16px;text-decoration:none;color:var(--text);font-size:.95rem}
+  nav a:hover{color:var(--accent)}
+  section{padding:56px 0;border-bottom:1px solid var(--border)}
+  section:nth-of-type(even){background:var(--bg-alt)}
+  h1{font-size:clamp(2rem,5vw,3rem);margin:0 0 4px;color:var(--accent);text-transform:uppercase;letter-spacing:.04em}
+  h2{font-size:1.5rem;margin:0 0 20px;color:var(--accent);text-transform:uppercase;letter-spacing:.06em}
+  h3{margin:28px 0 8px;font-size:1.15rem}
+  .tagline{font-size:1.15rem;color:var(--muted);margin:0 0 24px}
+  .btn{display:inline-block;padding:10px 18px;border-radius:8px;text-decoration:none;font-weight:600;margin:6px 10px 0 0;border:2px solid var(--accent)}
+  .btn.primary{background:var(--accent);color:#fff}
+  .btn.ghost{color:var(--accent)}
+  .why{margin:22px 0 0;padding:14px 18px;border-left:4px solid var(--accent);background:var(--accent-soft);border-radius:0 8px 8px 0;font-size:.95rem}
+  .why strong{display:block;margin-bottom:2px}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px 22px;margin:16px 0}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+  .timeline{border-left:3px solid var(--accent);margin:8px 0 0 8px;padding-left:22px}
+  .entry{position:relative;margin-bottom:26px}
+  .entry::before{content:"";position:absolute;left:-31px;top:6px;width:13px;height:13px;border-radius:50%;background:var(--bg);border:3px solid var(--accent)}
+  .entry .when{font-size:.85rem;color:var(--accent);text-transform:uppercase;letter-spacing:.06em;font-weight:600}
+  .entry h4{margin:2px 0 4px;font-size:1.05rem}
+  ul{margin:8px 0;padding-left:22px}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;padding:0;list-style:none}
+  .chips li{background:var(--accent-soft);color:var(--text);border:1px solid var(--border);border-radius:999px;padding:3px 12px;font-size:.9rem}
+  blockquote{margin:0;font-size:1.05rem}
+  figure{margin:18px 0}
+  figure img{max-width:100%;height:auto;border:1px solid var(--border);border-radius:8px;display:block}
+  figcaption{font-size:.88rem;color:var(--muted);margin-top:6px}
+  pre{background:#16111a;color:#f2e9f6;padding:16px;border-radius:8px;overflow:auto;font-size:.88rem;line-height:1.5}
+  .todo{border:2px dashed var(--todo);background:var(--todo-bg);border-radius:12px;padding:16px 20px;margin:16px 0}
+  .todo .label{display:inline-block;background:var(--todo);color:#fff;font-size:.72rem;font-weight:700;letter-spacing:.08em;padding:1px 8px;border-radius:4px;margin-bottom:6px}
+  code{overflow-wrap:anywhere}
+  .todo,.card{overflow-wrap:anywhere}
+  footer{padding:32px 0;text-align:center;color:var(--muted);font-size:.9rem}
+  @media (max-width:640px){ nav a{margin:0 12px 0 0} section{padding:40px 0} }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#home">Jada Smith</a>
+    <nav aria-label="Main">
+      <a href="#mission">Mission</a>
+      <a href="#resume">Resume</a>
+      <a href="#projects">Projects</a>
+      <a href="#code">Code</a>
+      <a href="#references">References</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ LANDING / COVER LETTER ============ -->
+<section id="home">
+  <div class="wrap">
+    <h1>Jada Smith</h1>
+    <p class="tagline">Computer Information Technology student &middot; Aspiring database developer &middot; Lethbridge, AB</p>
+    <p>Hi, I'm Jada. I'm a Computer Information Technology student at Lethbridge Polytechnic and an IT support student at a federal government lab, where I troubleshoot hardware, software, and network issues on my own and build the database tools my coworkers use.</p>
+    <p>What I enjoy most is database work: finding out what data people actually need, then designing something that connects it all together like a web. I'm looking to start my career in a role where I can design, build, and improve data systems, ideally as a database developer.</p>
+    <p>This portfolio shows how I work. You'll find my mission statement, resume, two database systems I designed and built on Microsoft Power Platform, a code sample, and what people I've worked with say about me.</p>
+    <a class="btn primary" href="#projects">See my projects</a>
+    <a class="btn ghost" href="#resume">View resume</a>
+    <div class="why">
+      <strong>Why this is here</strong>
+      This landing page replaces a traditional cover letter. It shows written communication, the ability to summarize my experience clearly, and a clear career direction.
+    </div>
+  </div>
+</section>
+
+<!-- ============ MISSION ============ -->
+<section id="mission">
+  <div class="wrap">
+    <h2>Personal Mission Statement</h2>
+    <div class="card">
+      <blockquote>
+        I build systems that make information easier to find, trust, and act on. I'm drawn to the planning and problem-solving side of database work: figuring out what people actually need from their data, then designing something that holds up as that need grows. My goal is to keep building toward a career as a database developer, bringing the same independence and attention to detail I've relied on troubleshooting IT issues on my own, to systems other people depend on every day.
+      </blockquote>
+    </div>
+    <div class="why">
+      <strong>Why this is here</strong>
+      It shows self-awareness and career direction. It demonstrates reflection on my strengths (planning, problem solving, independence) and connects them to the kind of work I want to do.
+    </div>
+  </div>
+</section>
+
+<!-- ============ RESUME ============ -->
+<section id="resume">
+  <div class="wrap">
+    <h2>Resume</h2>
+    <p><a class="btn primary" href="Jada_Smith_Resume.pdf">Download resume (PDF)</a></p>
+
+    <h3>Work Experience</h3>
+    <div class="timeline">
+      <div class="entry">
+        <div class="when">May 2026 &ndash; Present</div>
+        <h4>IT On-Site Support Student, Canadian Food Inspection Agency (CFIA)</h4>
+        <ul>
+          <li>Independently troubleshoot hardware, software, and networking issues, frequently without direct supervision</li>
+          <li>Designed and built a two-part employee database (Training and Certification tracking) using Microsoft Power Platform</li>
+          <li>Provided user support and training on internally built database tools</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="when">Sep 2025 &ndash; Apr 2026</div>
+        <h4>Tutor, Lethbridge Polytechnic</h4>
+        <ul>
+          <li>Tutored 6&ndash;7 first-year Computer Information Technology students in programming and binary math</li>
+          <li>Explained and reinforced concepts as well as problem-solving strategies for student success</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="when">Jul 2020 &ndash; Aug 2024 (full time &amp; seasonal 2016&ndash;2019)</div>
+        <h4>Production Worker, Tradesman Manufacturing</h4>
+        <ul>
+          <li>Operated and maintained CNC lasers in a fast-paced production environment</li>
+          <li>Collaborated and trained team members to meet production goals</li>
+          <li>Worked inside confined CNC laser spaces to diagnose issues</li>
+          <li>Troubleshot and resolved equipment malfunctions by diagnosing mechanical and technical issues</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>Education</h3>
+    <div class="timeline">
+      <div class="entry">
+        <div class="when">Sep 2024 &ndash; Expected 2027</div>
+        <h4>Computer Information Technology Diploma, Lethbridge Polytechnic</h4>
+        <p>Dean's List for maintaining a high grade point average and academic excellence. Relevant coursework: Data Structures &amp; Algorithms, Operating Systems, Networking Design.</p>
+      </div>
+    </div>
+
+    <h3>Skills</h3>
+    <ul class="chips">
+      <li>C#</li><li>Java</li><li>HTML / CSS</li><li>MySQL</li><li>Relational database design</li><li>ER diagrams</li>
+      <li>Power Apps</li><li>Power Automate</li><li>Power BI</li><li>Git</li><li>Visual Studio</li>
+      <li>Networking (WAN/LAN)</li><li>Hardware &amp; software support</li>
+    </ul>
+
+    <h3>Academic Projects</h3>
+    <ul>
+      <li><strong>Networking &amp; Web Servers:</strong> Worked with Apache and PHP to create multi-step web forms and practiced troubleshooting with both.</li>
+      <li><strong>Database Project:</strong> Created a relational database for a horse stable management system using MySQL and ER diagrams.</li>
+    </ul>
+
+    <div class="todo">
+      <span class="label">TO ADD</span><br>
+      <strong>Volunteer / community experience:</strong> add a short list here with descriptions that highlight IT or soft skills (only things you actually did), or delete this box if you have none.
+    </div>
+
+    <div class="why">
+      <strong>Why this is here</strong>
+      My resume summarizes my experience, education, and skills in one place. It shows hands-on IT support experience, database work, tutoring (communication and teaching), and the ability to learn new tools quickly.
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section id="projects">
+  <div class="wrap">
+    <h2>Project Work</h2>
+    <p>These two systems started as real work projects at my placement. With my employer's permission, I rebuilt both with fictional data so I can show how they work. All names, tests, and records below are made up.</p>
+
+    <!-- Project 1 -->
+    <h3>1. Certification &amp; Test Tracking System</h3>
+    <div class="card">
+      <p><strong>The problem:</strong> staff certifications and required recurring tests (proficiency tests and internal panels) were hard to track, so it was easy to miss a due date or lose track of a retest.</p>
+      <p><strong>What I built:</strong></p>
+      <ul>
+        <li>A relational database of 10 tables covering employees, units, worksites, tests, test assignments, notification recipients, and completion records.</li>
+        <li>40 recurring tests across 8 units, each with a recurrence period, last completed date, and planned date.</li>
+        <li>Internal and external completion records, with results, non-conformance (NC) tickets, and retest tracking.</li>
+        <li>A many-to-many link between units and worksites using a bridge table, and between tests and employees using an assignment table.</li>
+        <li>A Power App to add training and certification records to the database.</li>
+        <li>A Power BI dashboard that flags tests as <em>Overdue</em>, <em>Due Soon</em>, or <em>Up to Date</em>, and shows completions and open retests.</li>
+      </ul>
+      <p><strong>Tools:</strong> Excel, Power Query, Power Apps, Power BI, DAX</p>
+
+      <figure>
+        <img src="images/NorthStar_ERD.png" alt="Entity relationship diagram of the Certification and Test Tracking database" onerror="this.closest('figure').style.display='none'">
+        <figcaption>Entity relationship diagram (ERD) for the certification database.</figcaption>
+      </figure>
+      <figure>
+        <img src="images/cert-dashboard-overview.png" alt="Power BI compliance overview dashboard" onerror="this.closest('figure').style.display='none'">
+        <figcaption>Power BI: compliance overview (overdue, due soon, up to date).</figcaption>
+      </figure>
+      <figure>
+        <img src="images/cert-dashboard-completions.png" alt="Power BI completions and retests dashboard" onerror="this.closest('figure').style.display='none'">
+        <figcaption>Power BI: completions and open retests.</figcaption>
+      </figure>
+      <figure>
+        <img src="images/cert-powerapp.png" alt="Power App used to add certification records" onerror="this.closest('figure').style.display='none'">
+        <figcaption>Power App for adding certification and training records.</figcaption>
+      </figure>
+    </div>
+    <div class="why">
+      <strong>Why this is here</strong>
+      This is my strongest example of end-to-end database work. It demonstrates requirements gathering with end users, relational design (keys, relationships, bridge tables, normalization), building a data entry app, reporting in Power BI, and working independently from a business need to a working system.
+    </div>
+
+    <!-- Project 2 -->
+    <h3>2. Employee Training Database</h3>
+    <div class="card">
+      <p><strong>The problem:</strong> training records for staff needed to be tracked and reported on in one place instead of scattered files.</p>
+      <p><strong>What I built:</strong></p>
+      <ul>
+        <li>A star schema data model with fact and dimension tables and bridge tables.</li>
+        <li>DAX calculated columns to turn raw records into the statuses people actually need to see.</li>
+        <li>A two-page Power BI dashboard for reporting.</li>
+        <li>Three automated Power Automate flows to keep records current without manual work.</li>
+        <li>A Power App to add training records to the database.</li>
+      </ul>
+      <p><strong>Tools:</strong> Excel, Power Query, Power Automate, Power Apps, Power BI, DAX</p>
+
+      <figure>
+        <img src="images/training-model.png" alt="Training database data model" onerror="this.closest('figure').style.display='none'">
+        <figcaption>Training database data model.</figcaption>
+      </figure>
+      <figure>
+        <img src="images/training-dashboard.png" alt="Training database Power BI dashboard" onerror="this.closest('figure').style.display='none'">
+        <figcaption>Power BI training dashboard.</figcaption>
+      </figure>
+      <figure>
+        <img src="images/training-powerapp.png" alt="Power App used to add training records" onerror="this.closest('figure').style.display='none'">
+        <figcaption>Power App for adding training records.</figcaption>
+      </figure>
+    </div>
+    <div class="why">
+      <strong>Why this is here</strong>
+      It shows the reporting and automation side of database work: modelling for analysis (star schema), writing DAX, building dashboards, and automating routine tasks with Power Automate.
+    </div>
+  </div>
+</section>
+
+<!-- ============ CODE SAMPLE ============ -->
+<section id="code">
+  <div class="wrap">
+    <h2>Programming Work Sample</h2>
+    <div class="todo">
+      <span class="label">TO ADD</span><br>
+      Paste 20&ndash;40 lines of your own code below (DAX, SQL, or Power Query), with comments, and replace the description. Keep the fake-data version only.
+    </div>
+    <pre><code>// Paste your code sample here</code></pre>
+    <p><strong>What it does:</strong> [one or two sentences]</p>
+    <div class="why">
+      <strong>Why this is here</strong>
+      [Which skills this shows and how, for example: logic and problem solving, writing readable code with comments, turning business rules into code.]
+    </div>
+  </div>
+</section>
+
+<!-- ============ REFERENCES ============ -->
+<section id="references">
+  <div class="wrap">
+    <h2>References &amp; Accolades</h2>
+    <div class="grid">
+      <div class="todo"><span class="label">TO ADD</span><br><blockquote>&ldquo;[Quote from reference 1]&rdquo;</blockquote><p>[Name], [Role / relationship]</p></div>
+      <div class="todo"><span class="label">TO ADD</span><br><blockquote>&ldquo;[Quote from reference 2]&rdquo;</blockquote><p>[Name], [Role / relationship]</p></div>
+      <div class="todo"><span class="label">TO ADD</span><br><blockquote>&ldquo;[Quote from reference 3]&rdquo;</blockquote><p>[Name], [Role / relationship]</p></div>
+    </div>
+    <div class="card">
+      <strong>Academic recognition:</strong> Dean's List, Lethbridge Polytechnic
+    </div>
+    <div class="why">
+      <strong>Why this is here</strong>
+      References give an outside view of how I work. They back up the skills I describe (independence, problem solving, teamwork, reliability) with what the people I've worked with say.
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact">
+  <div class="wrap">
+    <h2>Contact</h2>
+    <p>I'm looking for opportunities to start my career in database development and IT.</p>
+    <div class="todo"><span class="label">TO ADD</span><br>Add the email address you're comfortable having on a public page, as a link: <code>&lt;a href="mailto:you@example.com"&gt;you@example.com&lt;/a&gt;</code></div>
+    <p><a href="https://github.com/ChickensHouse">GitHub</a></p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">&copy; 2026 Jada Smith. Project data shown on this site is fictional.</div>
+</footer>
+
+</body>
+</html>
